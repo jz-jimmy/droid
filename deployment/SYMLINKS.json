@@ -1,0 +1,9 @@
+{
+  "droid/fairo/polymetis/polymetis/data/franka_panda_robotiq_85/meshes/collision": "../../franka_panda/meshes/collision/",
+  "droid/fairo/polymetis/polymetis/data/franka_panda_robotiq_85/meshes/robotiq-2f": "../../kuka_iiwa/meshes/robotiq-2f/",
+  "droid/fairo/polymetis/polymetis/data/franka_panda_robotiq_85/meshes/visual": "../../franka_panda/meshes/visual/",
+  "droid/fairo/polymetis/polymetis/python/polymetis/conf": "../../conf",
+  "droid/fairo/polymetis/polymetis/python/polymetis/data": "../../data",
+  "droid/fairo/polymetis/polymetis/python/polymetis_pb2/polymetis_pb2.py": "../../build/polymetis_pb2.py",
+  "droid/fairo/polymetis/polymetis/python/polymetis_pb2_grpc/polymetis_pb2_grpc.py": "../../build/polymetis_pb2_grpc.py"
+}

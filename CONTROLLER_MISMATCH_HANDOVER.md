@@ -131,7 +131,7 @@ Included here:
 - `deployment/evidence/latest_rollout.png`, `rollout_analysis.json`, and two historical diagnosis reports.
 - `deployment/evidence/checkpoint_metadata/`: ACT configuration and processor JSON; `checkpoint_sha256.json` identifies all original checkpoint files.
 - `deployment/workstation/wmrl_real/`: current local rollout/camera modifications, useful as a comparison snapshot, not an entire replacement package.
-- `deployment/SHA256SUMS`: file integrity manifest for the uploaded snapshot.
+- `deployment/SHA256SUMS`: integrity hashes for regular snapshot files (excluding the manifest itself); `deployment/SYMLINKS.json` records source symlinks. Generated protobuf symlinks resolve after building Polymetis.
 
 Not uploaded: large policy weights, rollout videos, training datasets, compiled libraries, caches, machine credential backups. Obtain weights and videos from the workstation if needed:
 
