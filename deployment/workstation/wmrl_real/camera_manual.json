@@ -1,0 +1,14 @@
+{
+  "left_static": {
+    "exposure": 110.04573769277303,
+    "gain": 0.0
+  },
+  "right_static": {
+    "exposure": 93.7026723889271,
+    "gain": 64.0
+  },
+  "wrist": {
+    "exposure": 6528.874073704459,
+    "gain": 40.0
+  }
+}

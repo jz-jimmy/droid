@@ -1,0 +1,29 @@
+/home/robopil/miniconda3/envs/polymetis-local/bin/launch_gripper.py:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  __import__('pkg_resources').require('polymetis==0.2')
+/home/robopil/miniconda3/envs/polymetis-local/lib/python3.8/site-packages/hydra/plugins/config_source.py:190: UserWarning: 
+Missing @package directive gripper/franka_hand.yaml in pkg://polymetis.conf.
+See https://hydra.cc/docs/next/upgrades/0.11_to_1.0/adding_a_package_directive
+  warnings.warn(message=msg, category=UserWarning)
+Warning: Failed to load 'libtorchscript_pinocchio.so' from CONDA_PREFIX, loading from default build directory instead: '/home/robopil/droid/droid/fairo/polymetis/polymetis/build/torch_isolation/libtorchscript_pinocchio.so'
+Warning: Failed to load 'libtorchrot.so' from CONDA_PREFIX, loading from default build directory instead: '/home/robopil/droid/droid/fairo/polymetis/polymetis/build/torch_isolation/libtorchrot.so'
+[2026-09-12 00:46:11,829][__main__][INFO] - Adding /home/robopil/droid/droid/fairo/polymetis/polymetis/build to $PATH
+[2026-09-12 00:46:11,940][polymetis.robot_client.executable_robot_client][INFO] - === Config: ===
+exec: franka_hand_client
+robot_ip: 128.59.17.200
+control_ip: 0.0.0.0
+control_port: 50052
+robot_client_metadata_path: /tmp/tmpl1inbpvm
+
+[2026-09-12 00:46:11,940][polymetis.robot_client.executable_robot_client][INFO] - === Executing client at /home/robopil/droid/droid/fairo/polymetis/polymetis/build/franka_hand_client ===
+[2026-09-12 00:46:11.950] [info] Connecting to robot_ip 128.59.17.200
+[2026-09-12 00:46:18.829] [info] Connected.
+[2026-09-12 00:47:38.178] [info] [move->hw] width=0.0780 speed=0.0800 stop=false
+[2026-09-12 00:47:39.210] [info] [move done] success=true
+[2026-09-12 00:53:02.870] [info] [grasp->hw] width=-0.2000 speed=0.2000 force=5.0000 eps_inner=0.1000 eps_outer=0.9000
+[2026-09-12 00:53:04.554] [info] [grasp done] success=true
+[2026-09-12 00:54:15.862] [info] [move->hw] width=0.0780 speed=0.0800 stop=false
+[2026-09-12 00:54:18.055] [info] [move done] success=true
+[2026-09-12 00:56:10.505] [info] [grasp->hw] width=-0.2000 speed=0.2000 force=5.0000 eps_inner=0.1000 eps_outer=0.9000
+[2026-09-12 00:56:12.267] [info] [grasp done] success=true
+[2026-09-12 00:57:19.745] [info] [move->hw] width=0.0780 speed=0.0800 stop=false
+[2026-09-12 00:57:21.685] [info] [move done] success=true

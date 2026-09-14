@@ -1,0 +1,228 @@
+{
+    "dataset": {
+        "repo_id": "local/round20_physical_v3_raw224",
+        "root": "/work/hdd/bfqx/jzhou21/datasets/lerobot/round20_physical_v3_raw224_1024s",
+        "episodes": null,
+        "image_transforms": {
+            "enable": false,
+            "max_num_transforms": 3,
+            "random_order": false,
+            "tfs": {
+                "brightness": {
+                    "type": "ColorJitter",
+                    "weight": 1.0,
+                    "kwargs": {
+                        "brightness": [
+                            0.8,
+                            1.2
+                        ]
+                    }
+                },
+                "contrast": {
+                    "type": "ColorJitter",
+                    "weight": 1.0,
+                    "kwargs": {
+                        "contrast": [
+                            0.8,
+                            1.2
+                        ]
+                    }
+                },
+                "saturation": {
+                    "type": "ColorJitter",
+                    "weight": 1.0,
+                    "kwargs": {
+                        "saturation": [
+                            0.5,
+                            1.5
+                        ]
+                    }
+                },
+                "hue": {
+                    "type": "ColorJitter",
+                    "weight": 1.0,
+                    "kwargs": {
+                        "hue": [
+                            -0.05,
+                            0.05
+                        ]
+                    }
+                },
+                "sharpness": {
+                    "type": "SharpnessJitter",
+                    "weight": 1.0,
+                    "kwargs": {
+                        "sharpness": [
+                            0.5,
+                            1.5
+                        ]
+                    }
+                },
+                "affine": {
+                    "type": "RandomAffine",
+                    "weight": 1.0,
+                    "kwargs": {
+                        "degrees": [
+                            -5.0,
+                            5.0
+                        ],
+                        "translate": [
+                            0.05,
+                            0.05
+                        ]
+                    }
+                }
+            }
+        },
+        "revision": null,
+        "use_imagenet_stats": true,
+        "video_backend": "pyav",
+        "return_uint8": false,
+        "depth_output_unit": "mm",
+        "streaming": false,
+        "eval_split": 0.05
+    },
+    "env": null,
+    "policy": {
+        "type": "act",
+        "n_obs_steps": 1,
+        "input_features": {
+            "observation.images.wrist": {
+                "type": "VISUAL",
+                "shape": [
+                    3,
+                    224,
+                    224
+                ]
+            },
+            "observation.images.right_static": {
+                "type": "VISUAL",
+                "shape": [
+                    3,
+                    224,
+                    224
+                ]
+            },
+            "observation.images.left_static": {
+                "type": "VISUAL",
+                "shape": [
+                    3,
+                    224,
+                    224
+                ]
+            },
+            "observation.state": {
+                "type": "STATE",
+                "shape": [
+                    8
+                ]
+            }
+        },
+        "output_features": {
+            "action": {
+                "type": "ACTION",
+                "shape": [
+                    8
+                ]
+            }
+        },
+        "device": "cuda:0",
+        "use_amp": false,
+        "use_peft": false,
+        "push_to_hub": false,
+        "repo_id": "wmrl/act_round20_physical_v3",
+        "private": null,
+        "tags": null,
+        "license": null,
+        "pretrained_path": null,
+        "pretrained_revision": null,
+        "chunk_size": 100,
+        "n_action_steps": 100,
+        "normalization_mapping": {
+            "VISUAL": "MEAN_STD",
+            "STATE": "MEAN_STD",
+            "ACTION": "MEAN_STD"
+        },
+        "vision_backbone": "resnet18",
+        "pretrained_backbone_weights": "ResNet18_Weights.IMAGENET1K_V1",
+        "replace_final_stride_with_dilation": false,
+        "pre_norm": false,
+        "dim_model": 512,
+        "n_heads": 8,
+        "dim_feedforward": 3200,
+        "feedforward_activation": "relu",
+        "n_encoder_layers": 4,
+        "n_decoder_layers": 1,
+        "use_vae": true,
+        "latent_dim": 32,
+        "n_vae_encoder_layers": 4,
+        "temporal_ensemble_coeff": null,
+        "temporal_ensemble_newest_dims": null,
+        "dropout": 0.1,
+        "kl_weight": 10.0,
+        "optimizer_lr": 4e-05,
+        "optimizer_weight_decay": 0.0001,
+        "optimizer_lr_backbone": 4e-05
+    },
+    "reward_model": null,
+    "output_dir": "/work/nvme/bfqx/jzhou21/wmrl/runs/mujoco_gear/lerobot_act_round20_physical_v3_raw224",
+    "job_name": "act-round20_physical_v3",
+    "resume": false,
+    "seed": 1000,
+    "cudnn_deterministic": false,
+    "num_workers": 32,
+    "batch_size": 128,
+    "prefetch_factor": 4,
+    "persistent_workers": true,
+    "steps": 208800,
+    "env_eval_freq": 20000,
+    "log_freq": 200,
+    "eval_steps": 11600,
+    "max_eval_samples": 4096,
+    "tolerance_s": 0.005,
+    "save_checkpoint": true,
+    "save_freq": 11600,
+    "use_policy_training_preset": true,
+    "optimizer": {
+        "type": "adamw",
+        "lr": 4e-05,
+        "weight_decay": 0.0001,
+        "grad_clip_norm": 10.0,
+        "betas": [
+            0.9,
+            0.999
+        ],
+        "eps": 1e-08
+    },
+    "scheduler": null,
+    "eval": {
+        "n_episodes": 50,
+        "batch_size": 50,
+        "use_async_envs": true,
+        "recording": false,
+        "recording_repo_id": null,
+        "recording_private": false
+    },
+    "wandb": {
+        "enable": true,
+        "disable_artifact": false,
+        "project": "wmrl-mujoco-gear",
+        "entity": null,
+        "notes": null,
+        "run_id": "u8rcii3f",
+        "mode": null,
+        "add_tags": true
+    },
+    "peft": null,
+    "job": {
+        "target": null,
+        "image": "huggingface/lerobot-gpu:latest",
+        "timeout": "2d",
+        "detach": false,
+        "tags": []
+    },
+    "save_checkpoint_to_hub": false,
+    "sample_weighting": null,
+    "rename_map": {},
+    "checkpoint_path": null
+}

@@ -1,0 +1,40 @@
+Warning: Failed to load 'libtorchscript_pinocchio.so' from CONDA_PREFIX, loading from default build directory instead: '/home/robopil/droid/droid/fairo/polymetis/polymetis/build/torch_isolation/libtorchscript_pinocchio.so'
+Warning: Failed to load 'libtorchrot.so' from CONDA_PREFIX, loading from default build directory instead: '/home/robopil/droid/droid/fairo/polymetis/polymetis/build/torch_isolation/libtorchrot.so'
+[bridge] ready (dry_run=False), z floor = -0.1977 m
+[bridge] listening on tcp://*:5588
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0359 rad
+[bridge] reset iter 1: max joint err 0.0037 rad
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0359 rad
+[bridge] reset iter 1: max joint err 0.0038 rad
+[bridge] gripper event: GRASP
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0385 rad
+[bridge] reset iter 1: max joint err 0.0039 rad
+[bridge] gripper event: GRASP
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0380 rad
+[bridge] reset iter 1: max joint err 0.0041 rad
+[bridge] reset iter 2: max joint err 0.0026 rad
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0366 rad
+[bridge] reset iter 1: max joint err 0.0038 rad
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0373 rad
+[bridge] reset iter 1: max joint err 0.0039 rad
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0386 rad
+[bridge] reset iter 1: max joint err 0.0037 rad
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0389 rad
+[bridge] reset iter 1: max joint err 0.0037 rad
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0383 rad
+[bridge] reset iter 1: max joint err 0.0036 rad
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0391 rad
+[bridge] reset iter 1: max joint err 0.0037 rad
+[bridge] reset_to_start
+[bridge] reset iter 0: max joint err 0.0386 rad
+[bridge] reset iter 1: max joint err 0.0036 rad

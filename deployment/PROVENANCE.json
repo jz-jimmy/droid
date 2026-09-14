@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-14",
+  "droid_revision": "01d66a23913e6842ff20ac518e777b797abce97b",
+  "fairo_revision": "1ba0d856918c3e246702d9ff80e34d440c600bf6",
+  "deployed_binary_sha256": {
+    "franka_panda_client": "5fdedccf5676586ca9dc165d440d91ce6dae473c0b9221ae8b1d20811bfd8f86",
+    "franka_hand_client": "12b64332391e00ebc5036ecdbf49a94185063dcf443f3ebb0553f046e5140a1e"
+  },
+  "sanitization": "DROID sudo_password reads DROID_SUDO_PASSWORD; no original Git history published",
+  "vendoring": "fairo and nested submodules expanded; source modifications preserved; build artifacts excluded"
+}

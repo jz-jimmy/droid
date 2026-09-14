@@ -1,0 +1,33 @@
+ 7b5483c6c7ba06b8e92b56fc90330a408ec1cdce polymetis/polymetis/python/polymetis/robot_drivers/psyonic_gripper/ability-hand-api (ref/legacy-i2c-api-45-g7b5483c)
+ 5119321b0e3e584ab50fc2d9583ac99fcf5d84d1 polymetis/polymetis/src/clients/franka_panda_client/third_party/libfranka (0.19.0-2-g5119321)
+ d96c221a32c343384cbe2f77c61116ed58b84231 polymetis/polymetis/src/clients/franka_panda_client/third_party/libfranka/common (1.0.2-22-gd96c221)
+ db8c5ea23522bc7fe2f01b3b0a4866a304b2e184 polymetis/polymetis/tests/cpp/fake_clock (heads/master)
+diff --git a/polymetis/polymetis/conf/gripper/franka_hand.yaml b/polymetis/polymetis/conf/gripper/franka_hand.yaml
+index 488a6d9ee..9c57e237e 100644
+--- a/polymetis/polymetis/conf/gripper/franka_hand.yaml
++++ b/polymetis/polymetis/conf/gripper/franka_hand.yaml
+@@ -3,8 +3,8 @@ gripper:
+   use_real_time: false
+   executable_cfg:
+     exec: franka_hand_client
+-    robot_ip: "192.168.0.239"
++    robot_ip: "128.59.17.200"
+     control_ip: ${ip}
+     control_port: ${port}
+   metadata_cfg: 
+-    _target_: polymetis.robot_client.metadata.EmptyRobotClientMetadata
+\ No newline at end of file
++    _target_: polymetis.robot_client.metadata.EmptyRobotClientMetadata
+diff --git a/polymetis/polymetis/conf/robot_client/franka_hardware.yaml b/polymetis/polymetis/conf/robot_client/franka_hardware.yaml
+index 03943daea..3ad26cb0d 100644
+--- a/polymetis/polymetis/conf/robot_client/franka_hardware.yaml
++++ b/polymetis/polymetis/conf/robot_client/franka_hardware.yaml
+@@ -14,7 +14,7 @@ robot_client:
+     hz: ${hz}
+     robot_model_cfg: ${robot_model}
+   executable_cfg:
+-    robot_ip: "192.168.0.239"
++    robot_ip: "128.59.17.200"
+     control_ip: ${ip}
+     control_port: ${port}
+     readonly: false
