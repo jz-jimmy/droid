@@ -2,6 +2,11 @@
 
 ## Start here
 
+Next steps: [Controller alignment deployment plan](CONTROLLER_ALIGNMENT_DEPLOYMENT_PLAN.md)
+contains the detailed staged diagnosis, logging contract, physical/simulation
+validation gates, completed Delta replay results, and recollection decision process.
+It also distinguishes proposed work and Delta-local changes from this snapshot.
+
 This branch is a **sanitized deployment snapshot**, prepared from the robot NUC after the September 12 real-world tests. It contains the DROID source, the deployed fork of Polymetis with its nested dependencies vendored, the separate WMRL bridge, and compact real-rollout evidence. Nothing starts a robot automatically.
 
 ```bash
